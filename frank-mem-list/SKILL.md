@@ -1,6 +1,6 @@
 ---
 name: frank-mem-list
-description: 列出用户分布式记忆 (frank-memory). 触发: 用户输入 "/frank:mem:list", "/frank:memory:list", "/frank-mem-list", "frank 列记忆", "我的记忆有什么", "frank memory 列一下" 等明确要看自己记忆条目的话.
+description: '列出用户分布式记忆 (frank-memory). 触发: 用户输入 "/frank:mem:list", "/frank:memory:list", "/frank-mem-list", "frank 列记忆", "我的记忆有什么", "frank memory 列一下" 等明确要看自己记忆条目的话.'
 ---
 
 # frank-mem-list

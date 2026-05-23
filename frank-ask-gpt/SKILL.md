@@ -1,6 +1,6 @@
 ---
 name: frank-ask-gpt
-description: 把当前用户问题原话转发给 codex CLI (gpt-5.5 Plus 订阅), 拿回答原样返回. 触发: 用户输入 "/frank:ask:gpt <prompt>", "/frank-ask-gpt <prompt>", "ask gpt:", "问 gpt", "frank 转 gpt" 等任何明确指定要 gpt/codex 回答的话.
+description: '把当前用户问题原话转发给 codex CLI (gpt-5.5 Plus 订阅), 拿回答原样返回. 触发: 用户输入 "/frank:ask:gpt <prompt>", "/frank-ask-gpt <prompt>", "ask gpt:", "问 gpt", "frank 转 gpt" 等任何明确指定要 gpt/codex 回答的话.'
 ---
 
 # frank-ask-gpt

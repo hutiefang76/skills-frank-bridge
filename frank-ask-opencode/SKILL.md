@@ -1,6 +1,6 @@
 ---
 name: frank-ask-opencode
-description: 把当前用户问题原话转发给 opencode CLI (Go 套餐, 默认 qwen3.6+), 拿回答原样返回. 触发: 用户输入 "/frank:ask:opencode <prompt>", "/frank-ask-opencode <prompt>", "/frank:ask:qwen <prompt>", "ask opencode", "问 qwen", "frank 转 opencode" 等明确指定要 opencode/qwen 回答的话.
+description: '把当前用户问题原话转发给 opencode CLI (Go 套餐, 默认 qwen3.6+), 拿回答原样返回. 触发: 用户输入 "/frank:ask:opencode <prompt>", "/frank-ask-opencode <prompt>", "/frank:ask:qwen <prompt>", "ask opencode", "问 qwen", "frank 转 opencode" 等明确指定要 opencode/qwen 回答的话.'
 ---
 
 # frank-ask-opencode

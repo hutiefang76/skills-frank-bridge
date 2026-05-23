@@ -1,6 +1,6 @@
 ---
 name: frank-ask-gemini
-description: 把当前用户问题原话转发给 gemini CLI (Google), 拿回答原样返回. 触发: 用户输入 "/frank:ask:gemini <prompt>", "/frank-ask-gemini <prompt>", "/frank:ask:google <prompt>", "ask gemini", "问 google", "frank 转 gemini" 等明确指定要 gemini/google 回答的话.
+description: '把当前用户问题原话转发给 gemini CLI (Google), 拿回答原样返回. 触发: 用户输入 "/frank:ask:gemini <prompt>", "/frank-ask-gemini <prompt>", "/frank:ask:google <prompt>", "ask gemini", "问 google", "frank 转 gemini" 等明确指定要 gemini/google 回答的话.'
 ---
 
 # frank-ask-gemini

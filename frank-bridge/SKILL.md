@@ -1,6 +1,6 @@
 ---
 name: frank-bridge
-description: AI 之间一问一答桥. 当用户用 `/frank:<target> <prompt>` 这种 slash 风格触发时, 调 `frank ai ask --to <target> "<prompt>"` 把请求转发给目标 CLI, 等回答, 把 stdout 原样回给用户. target 支持 gpt/codex (默认 gpt-5.5) / claude (opus) / opencode (qwen3.6) / gemini. 触发关键词: /frank:gpt, /frank:codex, /frank:claude, /frank:opencode, /frank:gemini, /frank:qwen, "问 gpt", "ask claude", "frank 转给 codex" 等任何明确指向跨 AI 询问的语句.
+description: 'AI 之间一问一答桥. 当用户用 `/frank:<target> <prompt>` 这种 slash 风格触发时, 调 `frank ai ask --to <target> "<prompt>"` 把请求转发给目标 CLI, 等回答, 把 stdout 原样回给用户. target 支持 gpt/codex (默认 gpt-5.5) / claude (opus) / opencode (qwen3.6) / gemini. 触发关键词: /frank:gpt, /frank:codex, /frank:claude, /frank:opencode, /frank:gemini, /frank:qwen, "问 gpt", "ask claude", "frank 转给 codex" 等任何明确指向跨 AI 询问的语句.'
 ---
 
 # frank-bridge — 跨 AI 一问一答桥

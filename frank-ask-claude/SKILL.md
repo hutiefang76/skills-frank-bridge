@@ -1,6 +1,6 @@
 ---
 name: frank-ask-claude
-description: 把当前用户问题原话转发给 claude CLI (Pro/Max 订阅 opus 默认), 拿回答原样返回. 触发: 用户输入 "/frank:ask:claude <prompt>", "/frank-ask-claude <prompt>", "ask claude:", "问 claude", "frank 转 claude", "用 opus 看下" 等明确指定要 claude/opus 回答的话.
+description: '把当前用户问题原话转发给 claude CLI (Pro/Max 订阅 opus 默认), 拿回答原样返回. 触发: 用户输入 "/frank:ask:claude <prompt>", "/frank-ask-claude <prompt>", "ask claude:", "问 claude", "frank 转 claude", "用 opus 看下" 等明确指定要 claude/opus 回答的话.'
 ---
 
 # frank-ask-claude
