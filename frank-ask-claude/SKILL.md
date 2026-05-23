@@ -8,7 +8,7 @@ description: '把当前用户问题原话转发给 claude CLI (Pro/Max 订阅 op
 用户**明确要 claude / opus 的视角**时, 用 Bash 工具调:
 
 ```bash
-frank ai ask --to claude "<用户的 prompt 原话>"
+frank ai ask --to claude --from claude --source-cwd "$PWD" "<用户的 prompt 原话>"
 ```
 
 **约定**:

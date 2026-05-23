@@ -1,13 +1,13 @@
 ---
 name: frank-bridge
-description: 'AI 之间一问一答桥. 当用户用 `/frank:<target> <prompt>` 这种 slash 风格触发时, 调 `frank ai ask --to <target> "<prompt>"` 把请求转发给目标 CLI, 等回答, 把 stdout 原样回给用户. target 支持 gpt/codex (默认 gpt-5.5) / claude (opus) / opencode (qwen3.6) / gemini. 触发关键词: /frank:gpt, /frank:codex, /frank:claude, /frank:opencode, /frank:gemini, /frank:qwen, "问 gpt", "ask claude", "frank 转给 codex" 等任何明确指向跨 AI 询问的语句.'
+description: 'AI 之间一问一答桥. 当用户用 `/frank:<target> <prompt>` 这种 slash 风格触发时, 调 `frank ai ask --to <target> --from claude --source-cwd "$PWD" "<prompt>"` 把请求转发给目标 CLI, 等回答, 把 stdout 原样回给用户. target 支持 gpt/codex (默认 gpt-5.5) / claude (opus) / opencode (qwen3.6) / gemini. 触发关键词: /frank:gpt, /frank:codex, /frank:claude, /frank:opencode, /frank:gemini, /frank:qwen, "问 gpt", "ask claude", "frank 转给 codex" 等任何明确指向跨 AI 询问的语句.'
 ---
 
 # frank-bridge — 跨 AI 一问一答桥
 
 你是 frank-bridge 助手. 用户在当前 AI (claude / codex / opencode 任一平台) 里向你
 表达 "把这句话问别的 AI" 的意图时, 你的工作是用 Bash 工具调
-`frank ai ask --to <target> "<prompt>"`, 把它的 stdout **完整原样** 返回给用户.
+`frank ai ask --to <target> --from claude --source-cwd "$PWD" "<prompt>"`, 把它的 stdout **完整原样** 返回给用户.
 
 ## 触发形式 (任一即匹配)
 
@@ -22,7 +22,7 @@ description: 'AI 之间一问一答桥. 当用户用 `/frank:<target> <prompt>` 
 
 1. **解析 prompt**: 去掉 `/frank:<target>` 前缀, 剩下就是要转发的内容. 内容含特殊字符 (引号 / 反引号 / 换行) 时, 用 heredoc 给 Bash:
    ```bash
-   frank ai ask --to gpt "$(cat <<'EOF'
+   frank ai ask --to gpt --from claude --source-cwd "$PWD" "$(cat <<'EOF'
    <这里放 prompt 原文>
    EOF
    )"
@@ -37,7 +37,7 @@ description: 'AI 之间一问一答桥. 当用户用 `/frank:<target> <prompt>` 
 
 你 (Bash):
 ```
-frank ai ask --to gpt "给我看看这个设计行不行: \"用户输入 sdfsdfsdgsg\""
+frank ai ask --to gpt --from claude --source-cwd "$PWD" "给我看看这个设计行不行: \"用户输入 sdfsdfsdgsg\""
 ```
 
 stdout 例如:
